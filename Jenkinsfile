@@ -35,6 +35,6 @@ node {
         }
     }
     stage('Run image') {
-        sh'docker run -d -p 99:8000 abchaimaa/hellonode'
+        sh'docker run -d -p 66:8000 abchaimaa/hellonode'
     }
 }
