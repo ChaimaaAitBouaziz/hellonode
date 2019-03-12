@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
   
-        sh 'sudo -n chmod 777 /var/run/docker.sock'
+        sh 'chmod 777 /var/run/docker.sock'
         app = docker.build("getintodevops/hellonode")
     }
 
