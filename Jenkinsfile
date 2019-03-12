@@ -12,7 +12,7 @@ node {
          * docker build on the command line */
   
         sh 'sudo chmod 777 /var/run/docker.sock'
-        app = docker.build("hellonode")
+        app = docker.build("abchaimaa/hellonode")
     }
 
     stage('Test image') {
