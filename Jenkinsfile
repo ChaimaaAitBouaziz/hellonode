@@ -34,4 +34,7 @@ node {
             app.push("latest")
         }
     }
+    stage('Run image') {
+        sh'docker run -d -p 99:8000 abchaimaa/hellonode'
+    }
 }
