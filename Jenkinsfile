@@ -10,8 +10,8 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-        sh 'chaimaa ALL=ALL NOPASSWD: ALL'
-        sh 'sudo chmod 777 /var/run/docker.sock'
+  
+        sh 'sudo -n chmod 777 /var/run/docker.sock'
         app = docker.build("getintodevops/hellonode")
     }
 
