@@ -36,7 +36,7 @@ node {
     }
     stage('Run image') {
         /*sh'docker run -d -p 66:8000 abchaimaa/hellonode'*/
-        app.withRun('-d -p 66:8000') { c ->
+        app.run('-d -p 66:8000') { c ->
             sh 'echo "container is up"'
         }
     }
